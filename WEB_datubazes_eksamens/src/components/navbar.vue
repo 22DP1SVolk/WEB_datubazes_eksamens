@@ -39,19 +39,19 @@ export default {
 </script>
 
 <style scoped>
-
-
 .navbar {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(245, 235, 224);
   display: flex;
   align-items: center;
-  background-color: transparent;
+  box-shadow: 0 10px 20px rgba(245, 235, 224, 3);
   padding: 0.74rem 1rem;
   position: relative;
   width: 100%;
   left: 0;
   top: 0;
   z-index: 5000;
+  height: 20px;
   /* box-shadow: 0 10px 20px rgba(255, 241, 230, 1); */
 }
 
@@ -124,11 +124,27 @@ export default {
   text-decoration: none;
   font-size: 1.2rem;
   padding: 0.5rem 0;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  position: relative;
+}
+
+.menu-item a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
 }
 
 .menu-item a:hover {
   color: #997b66;
+}
+
+.menu-item a:hover::after {
+  background-color: #997b66;
 }
 
 /* Styling for auth buttons */
