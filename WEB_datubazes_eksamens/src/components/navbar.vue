@@ -39,6 +39,7 @@ export default {
 </script>
 
 <style scoped>
+
 .navbar {
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(245, 235, 224);
@@ -53,6 +54,9 @@ export default {
   z-index: 5000;
   height: 20px;
   /* box-shadow: 0 10px 20px rgba(255, 241, 230, 1); */
+  max-width: 100vw; /* Ensure it doesn't go beyond the viewport */
+  overflow: hidden; /* Prevent horizontal scrolling */
+  white-space: nowrap; /* Prevent wrapping */
 }
 
 /* .navbar::after {

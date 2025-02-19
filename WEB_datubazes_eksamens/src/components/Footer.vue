@@ -27,58 +27,60 @@
   };
   </script>
   
-  <style scoped>
- body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        .footer {
-            background: #997b66;
-            color: white;
-            padding: 10px 20px;
-            font-size: 12px;
-        }
-        .footer-container {
-            font-family: Arial, Helvetica, sans-serif;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            max-width: 1200px;
-            margin: auto;
-            gap: 40px;
-        }
-        .footer-section {
-            margin: 5px;
-        }
-        .footer-section h2 {
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            font-size: 14px;
-            margin-bottom: 3px;
-        }
-        .footer-section a {
-            color: white;
-            text-decoration: none;
-            font-size: 12px;
-            transition: color 0.3s;
-        }
-        .footer-section a:hover {
-            color: #0073e6;
-        }
-        .social-icons a {
-            margin: 0 5px;
-            color: white;
-            font-size: 16px;
-            transition: color 0.3s;
-        }
-        .social-icons a:hover {
-            color: #0073e6;
-        }
-        .footer-copyright {
-            text-align: center;
-            font-size: 10px;
-            color: white;
-            margin-top: 5px;
-        }
+  
+<style scoped>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.footer {
+    background: #997b66;
+    color: white;
+    padding: 10px 20px;
+    font-size: 12px;
+}
+.footer-container {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    gap: 40px;
+}
+.footer-section {
+    margin: 5px;
+}
+.footer-section h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    transition: color 0.3s;
+}
+.footer-section a:hover {
+    color: rgb(245, 235, 224);
+}
+.social-icons a {
+    margin: 0 5px;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+.social-icons a:hover {
+    color: rgb(245, 235, 224);
+}
+.footer-copyright {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 10px;
+    color: white;
+    margin-top: 5px;
+}
   
   </style>
   

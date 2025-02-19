@@ -52,18 +52,23 @@ export default {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: linear-gradient(to right, #ff7eb3, #ff758c);
+  background:rgb(245, 235, 224);
   padding: 16px;
+  width: 100vw; /* Ensures full viewport width */
+  box-sizing: border-box; /* Prevents extra spacing issues */
 }
 
 .signup-box {
-  width: 100%;
-  max-width: 400px;
+  width: 90%;  /* Allows responsiveness */
+  max-width: 400px; /* Keeps the form at a good size */
+  margin: 0 auto; /* Ensures centering */
   background: rgba(255, 255, 255, 0.9);
   padding: 32px;
   border-radius: 16px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* text-align: center; Ensures child elements are centered */
 }
+
 
 .signup-title {
   font-size: 24px;
@@ -85,25 +90,30 @@ export default {
 }
 
 .signup-input {
-  width: 100%;
+  width: 100%; /* Ensures full width within its container */
+  /* max-width: 360px; Controls excessive stretching */
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 8px;
   outline: none;
   transition: border-color 0.3s;
+  box-sizing: border-box; /* Prevents padding from affecting width */
+  display: block;
+  margin: 0 auto; /* Centers the input fields */
 }
 
 .signup-input:focus {
-  border-color: #ff758c;
+  border-color: #997b66;
 }
 
 .signup-button {
   width: 100%;
-  background: linear-gradient(to right, #ff7eb3, #ff758c);
-  color: white;
+  background: rgb(245, 235, 224);
+  color: black;
   padding: 12px;
   font-weight: bold;
   border-radius: 8px;
+  border-color: #997b66;
   transition: opacity 0.3s;
   cursor: pointer;
 }
@@ -119,7 +129,7 @@ export default {
 }
 
 .login-link {
-  color: #ff758c;
+  color: #997b66;
   text-decoration: none;
 }
 

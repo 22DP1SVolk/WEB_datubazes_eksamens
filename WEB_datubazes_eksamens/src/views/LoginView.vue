@@ -50,7 +50,7 @@ export default {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: linear-gradient(to right, #3b82f6, #9333ea);
+  background: rgb(245, 235, 224);
   padding: 16px;
 }
 
@@ -83,16 +83,20 @@ export default {
 }
 
 .login-input {
-  width: 100%;
+  width: 100%; /* Ensures full width within its container */
+  /* max-width: 360px; Controls excessive stretching */
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 8px;
   outline: none;
   transition: border-color 0.3s;
+  box-sizing: border-box; /* Prevents padding from affecting width */
+  display: block;
+  margin: 0 auto; /* Centers the input fields */
 }
 
 .login-input:focus {
-  border-color: #3b82f6;
+  border-color: #997b66;
 }
 
 .login-options {
@@ -110,7 +114,7 @@ export default {
 }
 
 .forgot-password {
-  color: #3b82f6;
+  color: #997b66;
   text-decoration: none;
 }
 
@@ -120,11 +124,12 @@ export default {
 
 .login-button {
   width: 100%;
-  background: linear-gradient(to right, #3b82f6, #9333ea);
-  color: white;
+  background: rgb(245, 235, 224);
+  color: black;
   padding: 12px;
   font-weight: bold;
   border-radius: 8px;
+  border-color: #997b66;
   transition: opacity 0.3s;
   cursor: pointer;
 }
@@ -140,7 +145,7 @@ export default {
 }
 
 .signup-link {
-  color: #3b82f6;
+  color: #997b66;
   text-decoration: none;
 }
 
